@@ -9,9 +9,9 @@ i2c = busio.I2C(board.SCL, board.SDA)
 sensor = adafruit_tsl2591.TSL2591(i2c)
 
 # Initialize Firebase with your service account JSON file
-cred = credentials.Certificate("path/to/your/serviceAccountKey.json")
+cred = credentials.Certificate("C:\Users\nagap\Downloads\rasberrypi-ai-iot-firebase-adminsdk-3qmhc-a7828ebe9f.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://your-firebase-project-id.firebaseio.com/'
+    'databaseURL': 'https://rasberrypi-ai-iot-default-rtdb.firebaseio.com/'
 })
 
 try:
