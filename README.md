@@ -35,7 +35,7 @@
 - lux = sensor.lux retrieves the light intensity in lux.
 - full and ir capture the full spectrum and infrared light intensities.
 - You print these values to the console for real-time monitoring.
-  **Firebase Data Storage**: You create a dictionary named data containing the light intensity values.
+**Firebase Data Storage**: You create a dictionary named data containing the light intensity values.
 - db.reference('/light_data').push(data) pushes this data to the Firebase Realtime Database under the /light_data node.
   Keyboard Interrupt Handling: The code includes a try block to handle a KeyboardInterrupt (Ctrl+C), which allows you to gracefully exit the script when you want to stop data collection.
 
