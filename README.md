@@ -48,3 +48,9 @@
 **Photography**: Automatically adjusting camera settings like shutter speed and ISO to capture well-exposed photos in changing lighting conditions.
 
 **Energy Efficiency**: Optimizing energy usage in smart homes or buildings by adjusting lighting and HVAC systems based on the available natural light.
+
+# Roles
+**Nagapranav chakilam** - Gathered info on project and sources to look upto and a part of code making
+**Saketh kumar noothi** - As part of python coder
+**Vijay vardhan nomula** - Helped in searching and briefed about rasberry pi 
+**Noothi nithin reddy** -  As part of python coder
