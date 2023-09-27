@@ -23,20 +23,20 @@
 
 - **Importing Libraries**: You start by importing the necessary libraries:
 
- - board and busio: These are used for setting up the I2C communication with the TSL2591 sensor.
- - adafruit_tsl2591: This library allows you to interface with the TSL2591 sensor.
- - firebase_admin and credentials: These are used for integrating Firebase with your Python script.
+    - board and busio: These are used for setting up the I2C communication with the TSL2591 sensor.
+    - adafruit_tsl2591: This library allows you to interface with the TSL2591 sensor.
+    - firebase_admin and credentials: These are used for integrating Firebase with your Python script.
   **Initializing I2C and Sensor**: You initialize the I2C bus and create an Adafruit TSL2591 sensor object. This sets up the hardware communication to read data from the light sensor.
 
 - **Firebase Initialization**: You initialize Firebase using our service account JSON file and provide the Firebase Realtime Database URL.
 
 - **Data Collection Loop** : Inside a while loop, you continuously collect data from the light sensor.
 
- - lux = sensor.lux retrieves the light intensity in lux.
- - full and ir capture the full spectrum and infrared light intensities.
- - You print these values to the console for real-time monitoring.
+   - lux = sensor.lux retrieves the light intensity in lux.
+   - full and ir capture the full spectrum and infrared light intensities.
+   - You print these values to the console for real-time monitoring.
 - **Firebase Data Storage**: You create a dictionary named data containing the light intensity values.
- - db.reference('/light_data').push(data) pushes this data to the Firebase Realtime Database under the /light_data node.
+   - db.reference('/light_data').push(data) pushes this data to the Firebase Realtime Database under the /light_data node.
   Keyboard Interrupt Handling: The code includes a try block to handle a KeyboardInterrupt (Ctrl+C), which allows you to gracefully exit the script when you want to stop data collection.
 
 # Uses of AdafruitTSL2591
